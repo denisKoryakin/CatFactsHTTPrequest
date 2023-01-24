@@ -36,10 +36,6 @@ public class Main {
         List<CatFact> catFacts = mapper.readValue(
                 response.getEntity().getContent(),
                 new TypeReference<List<CatFact>>() {
-                    @Override
-                    public Type getType() {
-                        return super.getType();
-                    }
                 }
         );
 
